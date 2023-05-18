@@ -1,0 +1,20 @@
+{
+    "name": "swy_we_chat",
+    "version": "1.0.0",
+    "description": "wechat vant",
+    "main": ".eslintrc.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "vant",
+        "wechat",
+        "template"
+    ],
+    "author": "xr",
+    "license": "ISC",
+    "dependencies": {
+        "@vant/weapp": "^1.10.16",
+        "dayjs": "^1.11.7"
+    }
+}

@@ -1,0 +1,8 @@
+<view class="relative content" wx:if="{{desc}}">
+	<text class="{{showMore?'x-ellipsis--l3':''}} " style="line-height: {{lineHight}}px"><text class="text-14px" catchtap="handleLink">{{desc}}</text><text class="absolute primary more text-14px" bindtap="handleReadMore" wx:if="{{showMore}}">查看全部</text>
+		<text class="absolute primary more text-14px" bindtap="handleHideMore" wx:if="{{isExceed && !showMore}}">收起</text>
+	</text>
+</view>
+<block wx:else>
+	<slot></slot>
+</block>

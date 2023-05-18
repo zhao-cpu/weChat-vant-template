@@ -1,0 +1,2 @@
+
+<x-text-ellipsis desc="{{ desc }}" />

@@ -1,0 +1,11 @@
+{
+    "pages": ["pages/test/test"],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "wx",
+        "navigationBarTextStyle": "black"
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
+}
