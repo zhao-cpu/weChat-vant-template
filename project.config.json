@@ -38,7 +38,11 @@
       }
     ],
     "ignoreUploadUnusedFiles": true,
-    "ignoreDevUnusedFiles": false
+    "ignoreDevUnusedFiles": false,
+    "condition": false,
+    "useCompilerPlugins": [
+      "sass"
+    ]
   },
   "compileType": "miniprogram",
   "condition": {},

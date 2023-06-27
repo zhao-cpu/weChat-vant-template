@@ -13,6 +13,5 @@ Page({
         console.log("res", res);
     },
 
-    handleSearch: debounce(function () {
-    }),
+    handleSearch: debounce(function () {}),
 });
