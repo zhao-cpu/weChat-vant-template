@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "x-text-ellipsis":"/components/text-ellipsis/text-ellipsis"
+    "x-text-ellipsis": "/components/text-ellipsis/text-ellipsis"
   }
 }

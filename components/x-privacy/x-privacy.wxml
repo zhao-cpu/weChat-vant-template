@@ -1,0 +1,21 @@
+<view wx:if="{{ innerShow }}">
+  <view class="mask"></view>
+  <view class="privacy" style="bottom:{{ height }}px">
+    <view class="privacy-title-box">
+      <text class="privacy-title">{{title}}</text>
+    </view>
+    <view class="privacy-main">
+      <view class="privacy-main-line">{{desc1}}</view>
+      <view class="privacy-main-line" bindtap="openPrivacyContract">{{urlTitle}}</view>
+      <view class="privacy-main-line">{{desc2}}</view>
+    </view>
+    <view class="privacy-footer">
+      <button id="disagree-btn" type="default" class="privacy-footer-btn btn-init" bindtap="handleDisagree">
+        不同意
+      </button>
+      <button id="agree-btn" type="default" open-type="agreePrivacyAuthorization" class="privacy-footer-btn btn-init" bindagreeprivacyauthorization="handleAgree">
+        同意并继续
+      </button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-privacy": "/components/x-privacy/x-privacy"
+  }
+}

@@ -1,0 +1,5 @@
+<x-privacy />
+
+<button bindtap="onChooseImage">选择图片</button>
+
+<button bindtap="onDownload">保存图片</button>
