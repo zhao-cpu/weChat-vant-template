@@ -1,5 +1,6 @@
 import CommonServices from "../../services/common";
 import { debounce } from "../../utils/util";
+import Baidu from '../../utils/baidu'
 Page({
   data: {
     desc:
@@ -8,7 +9,7 @@ Page({
       name: "",
     },
   },
-  onLoad() {
+  async onLoad() {
     this.init();
   },
 
