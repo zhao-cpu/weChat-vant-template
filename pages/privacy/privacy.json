@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "x-privacy": "/components/x-privacy/x-privacy"
-  }
+  },
+  "navigationBarTitleText": "隐私协议"
 }

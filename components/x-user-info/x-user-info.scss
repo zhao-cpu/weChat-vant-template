@@ -1,0 +1,43 @@
+page {
+  --x-user-info-avatar-size: 100rpx;
+
+  --x-user-info-name-size: 32rpx;
+  --x-user-info-name-color: #333;
+
+  --x-user-info-subname-size: 24rpx;
+  --x-user-info-subname-color: #999;
+  --x-user-info-subname-top: 6rpx;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+
+  .avatar {
+    width: var(--x-user-info-avatar-size);
+    height: var(--x-user-info-avatar-size);
+    border-radius: 50%;
+    margin-right: 20rpx;
+  }
+
+  .main {
+    height: var(--x-user-info-avatar-size);
+    flex: 1;
+    .name {
+      display: flex;
+      font-weight: bold;
+      font-size: var(--x-user-info-name-size);
+      color: var(--x-user-info-name-color);
+    }
+
+    .subname {
+      display: flex;
+      font-size: var(--x-user-info-subname-size);
+      color: var(--x-user-info-subname-color);
+      margin-top: var(--x-user-info-subname-top);
+    }
+  }
+
+ 
+
+}

@@ -1,0 +1,6 @@
+<view class="wrap-fixed">
+	<view class="safe-area-inset-bottom">
+		<view wx:if="{{ text }}" class="btn-class wrap-btn {{ isActive ? 'active' : '' }}" bindtap="handleSubmit">{{ text }}</view>
+		<slot></slot>
+	</view>
+</view>

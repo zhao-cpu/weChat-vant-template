@@ -11,6 +11,7 @@ page {
 }
 
 .placeholder-class {
+    font-size: 28rpx;
     color: #bbbbbb;
 }
 
@@ -130,6 +131,9 @@ textarea {
 }
 .justify-end {
     justify-content: flex-end;
+}
+.justify-around{
+    justify-content: space-around;
 }
 .break-all {
     word-break: break-all;

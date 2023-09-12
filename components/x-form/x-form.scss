@@ -1,0 +1,16 @@
+.form-item {
+  margin-top: 32rpx;
+  & .title {
+    color: #333;
+    font-size: 32rpx;
+    font-weight: bold;
+    display: flex;
+  }
+
+  & .main {
+    margin-top: 20rpx;
+    padding: 28rpx 32rpx;
+    border-radius: 16rpx;
+    background-color: #f6f6f6;
+  }
+}

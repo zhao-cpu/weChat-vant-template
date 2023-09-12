@@ -1,0 +1,16 @@
+<block wx:if="{{show}}">
+	<view class="common-keyboard-input custom-class ios-safe-bottom" catchtap="handleHide">
+		<view class="fixed left-0 right-0 bottom-0 top-0" wx:if="{{ focus }}" catchtap="handleMask"></view>
+		<view class="fixed left-0 right-0 bg-white content-class z-10 ios-safe-bottom" style="bottom: {{keyboardheight}}px" catchtap="handlePass">
+			<view class="user-warps">
+				<slot name="left"></slot>
+				<view class="input-warps">
+					<input fixed class="inputs" adjust-position="{{ false }}" hold-keyboard="{{ holdKeyboard }}" placeholder-class="placeholder-class" placeholder="{{ placeholder }}" focus="{{ focus }}" value="{{ custom }}" bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur" bindkeyboardheightchange="keyboardChange" />
+				</view>
+				<cover-view wx:if="{{ isCoverView }}" class="confirm {{custom?'active ':''}} " catchtap="confirm">{{ btnText }}</cover-view>
+				<view wx:else class="confirm {{custom?'active ':''}} " catchtap="confirm">{{ btnText }}</view>
+			</view>
+			<slot name="bottom"></slot>
+		</view>
+	</view>
+</block>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "x-text-ellipsis": "/components/text-ellipsis/text-ellipsis",
+    "x-user-info": "/components/x-user-info/x-user-info",
+    "x-submit": "/components/x-submit/x-submit",
+    "x-form-item": "/components/x-form/x-form"
+  },
+  "navigationBarTitleText": "例子"
+}

@@ -7,5 +7,17 @@
     "bigPackageSizeSupport": true
   },
   "libVersion": "3.0.2",
-  "condition": {}
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "例子",
+          "pathName": "pages/example/example",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

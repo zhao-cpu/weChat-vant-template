@@ -1,0 +1,40 @@
+page {
+  --x-common-submit-padding: 74rpx;
+  --x-common-submit-z-index: 1;
+  --x-common-submit-bgcolor: #333;
+  --x-common-submit-border-radius: 43rpx;
+
+  --x-common-submit-border-top-height: 0px;
+  --x-common-submit-border-top-color: #eee;
+}
+
+.wrap-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding-left: var(--x-common-submit-padding);
+  padding-right: var(--x-common-submit-padding);
+  z-index: var(--x-common-submit-z-index);
+  border-top: var(--x-common-submit-border-top-height) solid
+    var(--x-common-submit-border-top-color);
+}
+
+.wrap-btn {
+  height: 86rpx;
+  line-height: 86rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: var(--x-common-submit-border-radius);
+  background: #d8d8d8;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.wrap-btn.active {
+  background: var(--x-common-submit-bgcolor);
+}

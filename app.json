@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/privacy/privacy", "pages/test/test"],
+  "pages": ["pages/privacy/privacy", "pages/example/example"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

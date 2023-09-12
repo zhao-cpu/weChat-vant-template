@@ -1,0 +1,7 @@
+<x-text-ellipsis desc="{{ desc }}" />
+
+<x-user-info />
+
+<x-form-item label="昵称" name="name" value="{{ user.name }}" placeholder="请填写昵称" data-type='user.name' bindinput="_onInput" />
+
+<x-submit isActive="{{ user.name }}" />

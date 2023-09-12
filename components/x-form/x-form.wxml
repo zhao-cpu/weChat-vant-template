@@ -1,0 +1,22 @@
+<view class="form-item custom-class">
+	<view class="title">
+		{{ label }}<slot name="right"></slot>
+	</view>
+	<slot name="desc"></slot>
+	<view wx:if="{{ !useCustom }}" class="main">
+		<block wx:if="{{ formType === 'textarea' }}">
+			<textarea maxlength="{{ -1 }}" value="{{ value }}" auto-height placeholder-class="placeholder-class" placeholder="{{ placeholder }}" bindinput="onInput" />
+		</block>
+		<view wx:if="{{ formType === 'input' }}" class="flex">
+			<input class="flex-1" type="{{ type }}" value="{{value}}" placeholder-class="placeholder-class" placeholder="{{ placeholder }}" bindinput="onInput" />
+			<slot name="right-icon"></slot>
+		</view>
+
+		<view wx:if="{{ formType === 'select' }}" class="flex" bindtap="onShow">
+			<input class="flex-1" disabled type="{{ type }}" value="{{value}}" placeholder-class="placeholder-class" placeholder="{{ placeholder }}" />
+			<van-icon name="arrow" color="#999" />
+		</view>
+	</view>
+
+	<slot wx:else name="custom"></slot>
+</view>

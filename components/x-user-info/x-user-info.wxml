@@ -1,0 +1,10 @@
+<view class="user user-class border" catchtap="onLink">
+	<image class="avatar" src="{{ avatar }}" mode="aspectFill" />
+
+	<view class="main main-class flex flex-col justify-around">
+		<view class="name">{{ name }}<slot name="name"></slot></view>
+		<view class="subname">{{ subname }}<slot name="subname"></slot></view>
+	</view>
+
+	<slot name="right"></slot>
+</view>
